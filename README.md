@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Student Grade Tracker – React Class Components & Lifecycle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully responsive, feature-rich web application designed to track and manage student grades. Built strictly using **React Class Components**, `this.state`, and core **React Lifecycle Methods** (`componentDidMount`, `componentDidUpdate`, `componentWillUnmount`).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Project Overview
 
-### `npm start`
+The **Student Grade Tracker** simplifies academic record management by allowing users to add, edit, filter, sort, and track student performance in real time. Passing status is automatically calculated based on scores, and all student data is saved locally to maintain persistence across page refreshes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Key Features
+* **Class Component Architecture**: Structured completely with class-based syntax and `this.state` management.
+* **Lifecycle Method Integration**:
+  * `componentDidMount()`: Loads sample data or retrieves saved records from `localStorage`.
+  * `componentDidUpdate()`: Syncs updated state seamlessly to `localStorage`.
+  * `componentWillUnmount()`: Logs item component unmounting for lifecycle tracking.
+* **Controlled Forms & Validation**: Real-time validation for student names and numeric grades (0–100).
+* **Dynamic Search, Filter & Sorting**: Search by student name, filter by status (*Passed/Failed*), and sort alphabetically or by numerical grade.
+* **Inline Grade Editing**: Dynamically edit student grades directly from individual card components.
+* **Responsive Design**: Designed with CSS Grid and Flexbox for Desktop, Tablet, and Mobile devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Frontend Framework**: React.js (Class Components)
+* **Styling**: Pure CSS3 (CSS Variables, Flexbox, CSS Grid, Responsive Media Queries)
+* **Build Tool**: Vite / Create React App
+* **Storage**: Browser `localStorage`
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Project Folder Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```text
+Student_Grade_Tracker_Jinal_Khernar/
+├── screenshots/
+│   ├── desktop-view.png
+│   ├── tablet-view.png
+│   └── mobile-view.png
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── AddStudentForm.jsx
+│   │   ├── StudentList.jsx
+│   │   └── StudentItem.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   |── index.js
+|   |── index.css
+├── package.json
+├── package-lock.json
+└── README.md
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment Link
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project deployment link is : []
