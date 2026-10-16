@@ -4,8 +4,8 @@ class StudentItem extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isEditing: false,
-      editGrade: props.student.grade
+      isEditing: false,// Toggles inline edit mode
+      editGrade: props.student.grade // Local buffer for edited grade input
     };
   }
 

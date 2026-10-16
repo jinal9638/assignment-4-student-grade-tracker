@@ -16,7 +16,7 @@ class AddStudentForm extends Component {
   };
 
   handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevents page reload on form submission
     const { name, grade } = this.state;
 
     // Validation
